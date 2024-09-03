@@ -21,7 +21,7 @@ const getWordInfo = async (word) => {
         resultDiv.innerHTML = `
         <h2><strong>Word: </strong> ${data[0].word}</h2>
         <p class="partOfSpeech">${data[0].meanings[0].partOfSpeech}</p>
-        <p><strong>Meaning: </strong> ${definitions.definition === undefined ? "Not Found" : definitions.definition}</p>
+        <p><strong>Def: </strong> ${definitions.definition === undefined ? "Not Found" : definitions.definition}</p>
         <p><strong>Example: </strong> ${definitions.example === undefined ? "Not Found" : definitions.example}</p>
         <p><strong>Antonyms: </strong></p>
     `;
